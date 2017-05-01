@@ -4,37 +4,37 @@ This project is template for agile training
 
 ## Getting Started
 
-- PHP version 5.6.30 so recommend install XAMPP
+- Use dwoo for template engine
 
-- All dependencies are managed by composer
+- Use phpunit for test framework
 
 ### Prerequisites
 
-1. XAMPP https://www.apachefriends.org/index.html
+1. Recommend PHP 5.6.30, so let's install XAMPP https://www.apachefriends.org/index.html
 
-2. composer https://getcomposer.org/
+2. Composer https://getcomposer.org/
 
 ### Installing
 
-clone source code from github
+Clone source code from github
 
 ```
 git clone https://github.com/kurozakizz/agile-starter-php.git
 ```
 
-enter project folder
+Enter project folder
 
 ```
 cd agile-starter-php
 ```
 
-download dependency that config from composer.json
+Download dependency that config from composer.json
 
 ```
 composer install
 ```
 
-and finally just start XAMPP service and place your code to /www folder
+Finally just start XAMPP service and place your code to /www folder
 
 # for WAMP user
 upgrade WAMP: https://john-dugan.com/upgrade-php-wamp/
