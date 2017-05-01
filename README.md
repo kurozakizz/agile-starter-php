@@ -34,5 +34,7 @@ download dependency that config from composer.json
 composer install
 ```
 
+and finally just start XAMPP service and place your code to /www folder
+
 # for WAMP user
 upgrade WAMP: https://john-dugan.com/upgrade-php-wamp/
