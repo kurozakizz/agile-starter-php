@@ -12,9 +12,11 @@ This project is template for agile training
 
 1. PHP 5.6.30, so let's install XAMPP https://www.apachefriends.org/index.html
 
-2. Composer https://getcomposer.org/
+2. PHPUnit 5.7 https://phpunit.de/
 
-3. Git https://git-scm.com/downloads
+3. Composer https://getcomposer.org/
+
+4. Git https://git-scm.com/downloads
 
 ### Installing
 
