@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require 'src/Email.php';
 
 // Dwoo config
 $core = new Dwoo\Core();
