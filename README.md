@@ -1,7 +1,8 @@
 # installation
 
-xampp: https://www.apachefriends.org/index.html
+1. install XAMPP https://www.apachefriends.org/index.html
+* Recommend PHP Version: 5.6.30
 
-PHP Version: 5.6.30
+2. install composer https://getcomposer.org/
 
-upgrade wamp: https://john-dugan.com/upgrade-php-wamp/
+upgrade WAMP (if use WAMP before): https://john-dugan.com/upgrade-php-wamp/
