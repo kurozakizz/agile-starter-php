@@ -9,24 +9,19 @@ final class EmailTest extends TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress()
     {
-        $this->assertInstanceOf(
-            Email::class,
-            Email::fromString('user@example.com')
-        );
+        $email = new Email('user@example.com');
+        $this->assertInstanceOf(Email::class, $email);
     }
 
     public function testCannotBeCreatedFromInvalidEmailAddress()
     {
         $this->expectException(InvalidArgumentException::class);
-
-        Email::fromString('invalid');
+        $email = new Email('invalid');
     }
 
     public function testCanBeUsedAsString()
     {
-        $this->assertEquals(
-            'user@example.com',
-            Email::fromString('user@example.com')
-        );
+        $email = new Email('user@example.com');
+        $this->assertEquals('user@example.com', $email->getEmail());
     }
 }

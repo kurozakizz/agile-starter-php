@@ -7,6 +7,7 @@
 <body>
     <h1>{$pageTitle}</h1>
     <p>{$pageContent}</p>
+    <p>email:{$email}</p>
 </body>
 
 </html>
