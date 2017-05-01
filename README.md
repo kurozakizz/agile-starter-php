@@ -10,9 +10,11 @@ This project is template for agile training
 
 ### Prerequisites
 
-1. Recommend PHP 5.6.30, so let's install XAMPP https://www.apachefriends.org/index.html
+1. PHP 5.6.30, so let's install XAMPP https://www.apachefriends.org/index.html
 
 2. Composer https://getcomposer.org/
+
+3. Git https://git-scm.com/downloads
 
 ### Installing
 
