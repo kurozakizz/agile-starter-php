@@ -1,12 +1,12 @@
 # Agile Starter - PHP
 
-This project is template for agile training
+Template project for agile training
 
 ## Getting Started
 
-- Use dwoo for template engine
+- Template Engine: **Dwoo**
 
-- Use phpunit for test framework
+- Test Framework: **PHPUnit**
 
 ### Prerequisites
 
