@@ -13,5 +13,5 @@ cd agile-starter-php
 
 composer install
 
-# For WAMP user
+# for WAMP user
 upgrade WAMP: https://john-dugan.com/upgrade-php-wamp/
