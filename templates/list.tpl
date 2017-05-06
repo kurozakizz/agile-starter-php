@@ -13,6 +13,21 @@
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <h2>Manage Customer</h2>
+      </div>
+    </div>
+
+    {if $insert_customer_id}
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="alert alert-success" role="alert">
+          <strong>Success:</strong> Customer has been saved successfully with id {$insert_customer_id}
+        </div>
+      </div>
+    </div>
+    {/if}
+
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
         <a class="btn btn-primary pull-right" href="add.php">Add Customer</a>
         <table class="table table-striped table-hover">
           <thead>

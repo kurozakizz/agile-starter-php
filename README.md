@@ -38,4 +38,10 @@ Download dependency that config from composer.json
 composer install
 ```
 
+How to run Test
+
+```
+phpunit --bootstrap src/Customer.php tests/CustomerTest
+```
+
 Finally just start XAMPP service and place your code to /www folder

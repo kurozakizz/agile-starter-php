@@ -14,7 +14,6 @@ $customerName = $_POST['customerName'];
 
 if (empty($customerName)) {
   $_SESSION['require_customername'] = true;
-  // echo $_SESSION['require_customername']; die;
   header('Location: add.php');
   exit;
 }
@@ -23,12 +22,13 @@ if (empty($customerName)) {
 if ($customerId != '') {
   // edit customer
   $action = 'edit';
-  // $result = Customer::editCustomer($customerId, $customerName);
+  // need to impliment edit customer code here
 } else {
   // create customer
   $result = Customer::createCustomer($customerName);
   if ($result['success']) {
     $isSuccess = true;
+    $_SESSION['insert_customer_id'] = $result['id'];
   } else {
     $_SESSION['insert_customer_fail'] = true;
   }

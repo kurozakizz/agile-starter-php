@@ -20,6 +20,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">Customer Info</div>
           <div class="panel-body">
+            <!-- BEGIN ADD FORM -->
             <form method="POST" action="save.php" class="form-horizontal">
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="customerName">Name*</label>
@@ -27,7 +28,6 @@
                   <input class="form-control" type="text" id="customerName" name="customerName" placeholder="Enter customer name">
                 </div>
               </div>
-              
               <div class="form-group">
                 <div class="col-sm-10 col-sm-offset-2">
                   {if $require_customername == true}
@@ -44,6 +44,7 @@
                 </div>
               </div>
             </form>
+            <!-- END ADD FORM -->
           </div>
         </div>
 
