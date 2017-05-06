@@ -33,4 +33,42 @@ final class Customer {
 
     return $customers;
   }
+
+  public static function getCustomer ($id) {
+    $params = array($id);
+    $db = DbConnection::getConnection();
+    $rs = $db->Execute('select * from customer where id = ?', $params);
+
+    $customer = null;
+    if ($rs->RecordCount() > 0) {
+      $row = $rs->FetchRow();
+      $customer = new Customer($row['id'], $row['name']);
+    }
+
+    $rs->Close();
+    $db->Close();
+
+    return $customer;
+  }
+
+  public static function createCustomer ($name) {
+    $params = array($name);
+    $db = DbConnection::getConnection();
+    $rs = $db->Execute('insert into customer(name) values(?)', $params);
+    // $objectId = $db->Insert_ID();
+
+    $result = array('success' => false, 'id' => '');
+    // $result['success'] = false;
+    // $result['id'] = '';
+    if ($rs) {
+      // $result['success'] = true;
+      // $result['id'] = $objectId;
+      $result = array('success' => true, 'id' => $db->Insert_ID());
+    }
+
+    $rs->Close();
+    $db->Close();
+
+    return $result;
+  }
 }

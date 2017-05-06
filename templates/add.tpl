@@ -22,9 +22,19 @@
           <div class="panel-body">
             <form method="POST" action="save.php" class="form-horizontal">
               <div class="form-group">
-                <label class="col-sm-2 control-label" for="customerName">Name</label>
+                <label class="col-sm-2 control-label" for="customerName">Name*</label>
                 <div class="col-sm-10">
                   <input class="form-control" type="text" id="customerName" name="customerName" placeholder="Enter customer name">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                  {if $require_customername == true}
+                  <div class="alert alert-warning" role="alert">
+                    <strong>Warning:</strong> Please enter customer name.
+                  </div>
+                  {/if}
                 </div>
               </div>
               <div class="form-group">

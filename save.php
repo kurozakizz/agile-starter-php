@@ -1,4 +1,6 @@
 <?php
+ob_start();
+session_start();
 require 'vendor/autoload.php';
 require 'src/Customer.php';
 
@@ -10,12 +12,26 @@ $isSuccess = false;
 $customerId = isset($_POST['customerId']) ? $_POST['customerId'] : '';
 $customerName = $_POST['customerName'];
 
+if (empty($customerName)) {
+  $_SESSION['require_customername'] = true;
+  // echo $_SESSION['require_customername']; die;
+  header('Location: add.php');
+  exit;
+}
+
 // save logic
 if ($customerId != '') {
+  // edit customer
   $action = 'edit';
-  $response = Customer::edit($customerId, $customerName);
+  // $result = Customer::editCustomer($customerId, $customerName);
 } else {
-  $response = Customer::add($customerName);
+  // create customer
+  $result = Customer::createCustomer($customerName);
+  if ($result['success']) {
+    $isSuccess = true;
+  } else {
+    $_SESSION['insert_customer_fail'] = true;
+  }
 }
 
 // redirect handling
