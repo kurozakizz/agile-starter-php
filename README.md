@@ -1,5 +1,9 @@
 # Agile Starter - PHP
 
+See document here
+
+https://docs.google.com/document/d/1xQqs23WR2BXmoC6PbjG-qe5rD59q_4EndiTS6Z1CRpA/edit
+
 Template project for agile training
 
 ## Getting Started
